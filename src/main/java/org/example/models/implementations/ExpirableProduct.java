@@ -13,7 +13,7 @@ public class ExpirableProduct extends Product implements IExpirable {
 
     private final ExpirableImpel expirableImpel;
 
-    ExpirableProduct(String name, double price, int quantity, ExpirableImpel expirableImpel) {
+    public ExpirableProduct(String name, double price, int quantity, ExpirableImpel expirableImpel) {
         super(name, price, quantity);
         this.expirableImpel = expirableImpel;
     }
