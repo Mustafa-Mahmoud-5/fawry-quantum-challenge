@@ -4,7 +4,7 @@ import org.example.models.interfaces.IShippable;
 import org.example.models.interfaces.IShippableItem;
 
 public class ShippableImpel implements IShippable {
-    private double weight;
+    private double weight; // in grams
 
     public ShippableImpel(double weight) {
         this.weight = weight;
@@ -22,7 +22,7 @@ public class ShippableImpel implements IShippable {
 
     @Override
     public double calculateShippingCost() {
-        return weight * 3.5; // each kilo costs 2.5 egps
+        return weight * 3.5; // each gram costs 1.5 egps
     }
  }
 

@@ -4,7 +4,7 @@ import org.example.models.implementations.*;
 
 import java.time.LocalDate;
 
-class ProductFactory {
+public  class ProductFactory {
     public static Product createBasicProduct(String name, double price, int quantity) {
         return new Product(name, price, quantity);
     }
